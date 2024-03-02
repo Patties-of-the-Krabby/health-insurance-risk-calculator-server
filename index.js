@@ -17,6 +17,13 @@ app.get('/about', (request, response) => {
 	response.send('This is a website that utilizes server-side node.js to implement an insurance risk calculator.')
 })
 
+app.get('/age', (request, response) => {
+	console.log('Calling "/age"')
+  
+	response.type('text/plain')
+	response.send('age')
+})
+
 app.get('/api/ping', (request, response) => {
 	console.log('Calling "/api/ping"')
 	response.type('text/plain')
