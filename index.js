@@ -23,6 +23,15 @@ app.get('/api/ping', (request, response) => {
 	response.send('ping response')
 })
 
+app.get('/age', (request, response) => {
+    console.log('Calling "/age" on the Node.js server.')
+    var inputs = url.parse(request.url, true).query
+    let age = parseInt(inputs.age)
+    let agePoints = age
+    response.type('text/plain')
+    response.send(agePoints.toString())
+})
+
 // Custom 404 page.
 app.use((request, response) => {
     response.type('text/plain')
