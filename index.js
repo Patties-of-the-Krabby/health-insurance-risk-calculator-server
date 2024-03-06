@@ -27,9 +27,8 @@ app.get('/age', (request, response) => {
     console.log('Calling "/age" on the Node.js server.')
     var inputs = url.parse(request.url, true).query
     let age = parseInt(inputs.age)
-    let agePoints = age
     response.type('text/plain')
-    response.send(agePoints.toString())
+    response.send(age.toString())
 })
 
 app.get('/bmi', (request, response) => {
