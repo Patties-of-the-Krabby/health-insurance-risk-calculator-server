@@ -32,19 +32,19 @@ app.get('/age', (request, response) => {
     response.send(agePoints.toString())
 })
 
-app.get('/bmi', (request, response) => {
-  console.log('Calling "/bmi" on the Node.js server.')
-  //grab the stuff from the url 
-  var inputs = url.parse(request.url, true).query
-  //specifically, the height and weight as ints
-  let height = parseInt(inputs.height)
-  let weight = parseInt(inputs.weight)
-  //bmi = (weight in pounds / (height in inches) ^ 2) * 703
-  let bmi = ((weight) / height ** 2) * 703
-  //send the stuff to the server as a string in plaintext
-  response.type('text/plain')
-  response.send(bmi.toString())
-})
+// app.get('/bmi', (request, response) => {
+//   console.log('Calling "/bmi" on the Node.js server.')
+//   //grab the stuff from the url 
+//   var inputs = url.parse(request.url, true).query
+//   //specifically, the height and weight as ints
+//   let height = parseInt(inputs.height)
+//   let weight = parseInt(inputs.weight)
+//   //bmi = (weight in pounds / (height in inches) ^ 2) * 703
+//   let bmi = ((weight) / height ** 2) * 703
+//   //send the stuff to the server as a string in plaintext
+//   response.type('text/plain')
+//   response.send(bmi.toString())
+// })
 
 // Custom 404 page.
 app.use((request, response) => {
