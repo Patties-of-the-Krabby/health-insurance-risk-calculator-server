@@ -6,7 +6,7 @@ Josh Brown, Kevin Danowski, Olivia Adamic, Logan Prasczewicz, Emilio Vilchis, Ju
 
 ## Credits
 - Credits to GitHub, GitPages, and Azure for hosting sites.
-- Node.js and VSCode is used for editing and commits.
+- Node.js and VSCode used for editing and commits.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
