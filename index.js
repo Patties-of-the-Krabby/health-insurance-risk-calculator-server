@@ -38,10 +38,6 @@ app.get('/bmi', (request, response) => {
   //specifically, the height and weight as ints
   let height = parseInt(inputs.height)
   let weight = parseInt(inputs.weight)
-  //check if the height is within range 
-  if (height < 24){
-    //kevin fix dis pls to add error feature here 
-  }
   //bmi = (weight in pounds / (height in inches) ^ 2) * 703
   let bmi = ((weight) / height ** 2) * 703
   const roundedBMI = bmi.toFixed(1)
